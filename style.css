@@ -1,16 +1,10 @@
 .nav {
   display: flex;
-
   align-content: space-between;
-
   justify-content: space-between;
-
   vertical-align: middle;
-
   padding: 20px;
-
   background-color: white;
-
   color: black;
 }
 
@@ -18,61 +12,50 @@
 #icon,
 #ch {
   display: none;
-
   visibility: hidden;
 }
 
 .menu {
   padding: 0px;
-
   list-style: none;
-
   background-color: white;
-
   display: flex;
-
   flex-wrap: wrap;
 }
 
+div {
+  max-width: 960px;
+}
+.menu {
+  width: 100%;
+}
 .menu li {
-  flex: auto;
-
+  flex: 1;
   text-align: center;
 }
 
 @media screen and (max-width: 960px) {
   .menu {
     flex-direction: column !important;
-
     display: none;
   }
-
   .menu li {
     text-align: right !important;
   }
-
   .menu a {
     padding-right: 15px !important;
   }
-
   #icon {
     display: block;
-
     visibility: visible;
-
     font-size: 7vw;
-
     padding-top: 10px;
-
     /* color: white; */
   }
-
   #ch {
     display: none;
-
     visibility: hidden;
   }
-
   #ch:checked ~ .menu {
     display: block;
   }
